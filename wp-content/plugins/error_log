@@ -1,0 +1,2 @@
+[21-Apr-2015 13:20:56 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/arndenver/public_html/wp-content/plugins/hello.php on line 60
+[28-May-2015 17:08:21 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/arndenver/public_html/wp-content/plugins/hello.php on line 60

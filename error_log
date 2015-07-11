@@ -1,0 +1,15 @@
+[26-Jul-2014 06:57:24 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1054
+[26-Jul-2014 18:58:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1037
+[26-Jul-2014 18:58:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1046
+[26-Jul-2014 19:04:09 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1046
+[26-Jul-2014 19:42:26 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1036
+[26-Jul-2014 19:45:40 UTC] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1038
+[26-Jul-2014 19:47:34 UTC] PHP Parse error:  syntax error, unexpected 'poop' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1038
+[26-Jul-2014 19:49:22 UTC] PHP Parse error:  syntax error, unexpected 'poop' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1038
+[26-Jul-2014 19:54:26 UTC] PHP Parse error:  syntax error, unexpected 'poop' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1038
+[26-Jul-2014 19:55:02 UTC] PHP Parse error:  syntax error, unexpected 'foo' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1038
+[26-Jul-2014 19:56:05 UTC] PHP Parse error:  syntax error, unexpected 'foo' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1036
+[26-Jul-2014 19:59:41 UTC] PHP Parse error:  syntax error, unexpected 'foo' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1036
+[26-Jul-2014 20:02:26 UTC] PHP Parse error:  syntax error, unexpected 'foo' (T_STRING) in /home/arndenver/public_html/wp-content/plugins/awesome-filterable-portfolio/afp.php on line 1036
+[01-Apr-2015 04:38:52 UTC] PHP Parse error:  syntax error, unexpected '<', expecting function (T_FUNCTION) in /home/arndenver/public_html/wp-content/themes/customizr/parts/class-content-page.php on line 67
+[01-Apr-2015 04:39:20 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/arndenver/public_html/wp-content/themes/customizr/parts/class-content-page.php on line 71

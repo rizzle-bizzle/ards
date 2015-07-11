@@ -1,0 +1,900 @@
+/**
+ * Theme Name: Customizr
+ * Theme URI: http://www.themesandco.com/customizr
+ * Description:  Enjoy designing a beautiful website live with the WP customizer : select skin, logo, social profiles, sliders, layout, home featured blocks, or even live css styling. The flat and fully responsive design can be used for small businesses, portfolios, blogs, corporate sites or landing pages. Built with valid HTML5 and CSS3 (from the Twitter Bootstrap), cross-browser tested, the theme is translation ready and available in 18 languages. Ready for WooCommerce, bbPress, qTranslate, the code is easily extensible with a comprehensive API of hooks.
+ * Version: 3.1.11
+ * Author: nikeo
+ * Author URI: http://www.themesandco.com/
+ * Tags: gray, white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, custom-menu, custom-colors, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, sticky-post, post-formats, rtl-language-support, editor-style
+ * Text Domain: customizr
+ * Copyright: (c) 2014 Nicolas GUILLAUME (nikeo), Nice, France
+ * License: GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+/**
+ * The styleheets of Customizr are located in inc/css. Each skin has its own stylesheet : blue.css, green.css, ...
+ *
+ * IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+ * If you want to style the css of Customizr, you can either use the Custom CSS section in the customizer (which will not be lost on update) OR create a child theme (recommended if you do many customizations) and add your css code in the style.css file of it.
+ */
+ 
+h1, h2, h3, h4, h5, h6 {
+font-family: 'antonioregular';
+text-transform: uppercase;
+font-size: 34px;
+}
+
+h1 {
+
+font-size: 29px!important;
+margin-top: 50px!important;
+}
+
+p {
+font-family: 'cabinmedium';
+}
+.carousel .item {
+    min-height: 350px;
+}
+
+
+
+#flexi-quote-rotator span {
+font-family: sans-serif;
+text-transform: none;
+}
+
+div#quotearea {
+height: 100px!important;
+}
+
+
+
+#quoterotator {
+width: 960px;
+margin: 0 auto;
+padding: 20px 0;
+font-size: 18px;
+text-align: center;
+}
+
+
+li.QuoteRotator_displayWidget {
+list-style-type: none;
+}
+
+#footer .container {
+min-height: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'arvoregular';
+text-transform: uppercase;
+}
+
+h2, h3 {
+font-size: 20px!important;
+color: #f78c40;
+}
+
+span.gallery-home {
+width: 100%;
+text-align: center;
+display: inline-block;
+height: 150px;
+vertical-align: middle;
+padding: 66px 0px;
+font-family: 'arvoregular';
+font-size: 25px;
+}
+
+a#id-one:link, a#id-one:visited, a#id-two:link, a#id-two:visited, a#id-three:link, a#id-three:visited, a#id-four:link, a#id-four:visited, a#id-five:link, a#id-five:visited, a#id-six:link, a#id-six:visited, a#id-seven:link, a#id-seven:visited, a#id-eight:link, a#id-eight:visited, a#id-nine:link, a#id-nine:visited {
+background-image: none;
+background-color: #46413B;
+}
+
+
+a#id-one:hover, a#id-one:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/logos.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-two:hover, a#id-two:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/identity.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-three:hover, a#id-three:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/marketing.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-four:hover, a#id-four:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/posters.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-five:hover, a#id-five:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/editorial.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-six:hover, a#id-six:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/invite.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-seven:hover, a#id-seven:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/web.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-eight:hover, a#id-eight:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/stop.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-nine:hover, a#id-nine:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/stop.png');
+background-color: transparent;
+color:transparent;
+}
+
+.carousel-caption .lead {
+font-family: 'arvoregular';
+font-size: 32px;
+}
+
+.carousel-caption h1 {
+text-transform: none;
+font-size: 22px;
+}
+
+.form-allowed-tags {
+display:none;
+}
+
+ @font-face {
+    font-family: 'roboto_slabbold';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slablight';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'encode_sans_narrowmedium';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.svg#encode_sans_narrowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'encode_sans_narrowsemibold';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.svg#encode_sans_narrowsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'encode_sans_narrowbold';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.svg#encode_sans_narrowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('fonts/arvo/arvo-bold-webfont.eot');
+    src: url('fonts/arvo/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/arvo/arvo-bold-webfont.svg#arvobold') format('svg'),
+         url('fonts/arvo/arvo-bold-webfont.woff') format('woff'),
+         url('fonts/arvo/arvo-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('fonts/arvo/arvo-regular-webfont.eot');
+    src: url('fonts/arvo/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arvo/arvo-regular-webfont.svg#arvoregular') format('svg'),
+         url('fonts/arvo/arvo-regular-webfont.woff') format('woff'),
+         url('fonts/arvo/arvo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antoniobold';
+    src: url('fonts/antonio/antonio-bold-webfont.eot');
+    src: url('fonts/antonio/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/antonio/antonio-bold-webfont.woff') format('woff'),
+         url('fonts/antonio/antonio-bold-webfont.ttf') format('truetype'),
+         url('fonts/antonio/antonio-bold-webfont.svg#antoniobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antonioregular';
+    src: url('fonts/antonio/antonio-regular-webfont.eot');
+    src: url('fonts/antonio/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/antonio/antonio-regular-webfont.woff') format('woff'),
+         url('fonts/antonio/antonio-regular-webfont.ttf') format('truetype'),
+         url('fonts/antonio/antonio-regular-webfont.svg#antonioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabinregular';
+    src: url('fonts/cabin/cabin-regular-webfont.eot');
+    src: url('fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-regular-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinsemibold';
+    src: url('fonts/cabin/cabin-semibold-webfont.eot');
+    src: url('fonts/cabin/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-semibold-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-semibold-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinmedium';
+    src: url('fonts/cabin/cabin-medium-webfont.eot');
+    src: url('fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-medium-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media (max-width: 1024px) {
+  a.home-gallery {
+    width: 275px;
+  }
+}
+
+/**
+ * Theme Name: Customizr
+ * Theme URI: http://www.themesandco.com/customizr
+ * Description:  Enjoy designing a beautiful website live with the WP customizer : select skin, logo, social profiles, sliders, layout, home featured blocks, or even live css styling. The flat and fully responsive design can be used for small businesses, portfolios, blogs, corporate sites or landing pages. Built with valid HTML5 and CSS3 (from the Twitter Bootstrap), cross-browser tested, the theme is translation ready and available in 18 languages. Ready for WooCommerce, bbPress, qTranslate, the code is easily extensible with a comprehensive API of hooks.
+ * Version: 3.1.11
+ * Author: nikeo
+ * Author URI: http://www.themesandco.com/
+ * Tags: gray, white, light, blue, red, yellow, green, purple, orange, black, one-column, two-columns, three-columns, left-sidebar, right-sidebar, fluid-layout, responsive-layout, custom-menu, custom-colors, featured-images, full-width-template, theme-options, threaded-comments, translation-ready, sticky-post, post-formats, rtl-language-support, editor-style
+ * Text Domain: customizr
+ * Copyright: (c) 2014 Nicolas GUILLAUME (nikeo), Nice, France
+ * License: GNU General Public License v2.0 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+
+/**
+ * The styleheets of Customizr are located in inc/css. Each skin has its own stylesheet : blue.css, green.css, ...
+ *
+ * IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+ * If you want to style the css of Customizr, you can either use the Custom CSS section in the customizer (which will not be lost on update) OR create a child theme (recommended if you do many customizations) and add your css code in the style.css file of it.
+ */
+ 
+h1, h2, h3, h4, h5, h6 {
+font-family: 'antonioregular';
+text-transform: uppercase;
+font-size: 34px;
+}
+
+p {
+font-family: 'cabinmedium';
+}
+.carousel .item {
+    min-height: 350px;
+}
+
+
+
+#flexi-quote-rotator span {
+font-family: sans-serif;
+text-transform: none;
+}
+
+div#quotearea {
+height: 100px!important;
+}
+
+footer#footer {
+
+}
+
+#quoterotator {
+width: 960px;
+margin: 0 auto;
+padding: 20px 0;
+font-size: 18px;
+text-align: center;
+}
+
+
+li.QuoteRotator_displayWidget {
+list-style-type: none;
+}
+
+#footer .container {
+min-height: 50px;
+max-width: 1170px;
+}
+
+footer .textwidget {
+text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'arvoregular';
+text-transform: uppercase;
+}
+
+h1{
+color: #222;
+}
+
+h2, h3 {
+font-size: 20px!important;
+color: #222;
+}
+
+span.gallery-home {
+width: 100%;
+text-align: center;
+display: inline-block;
+height: 150px;
+vertical-align: middle;
+padding: 66px 0px;
+font-family: 'arvoregular';
+font-size: 25px;
+}
+
+a#id-one:link, a#id-one:visited, a#id-two:link, a#id-two:visited, a#id-three:link, a#id-three:visited, a#id-four:link, a#id-four:visited, a#id-five:link, a#id-five:visited, a#id-six:link, a#id-six:visited, a#id-seven:link, a#id-seven:visited, a#id-eight:link, a#id-eight:visited, a#id-nine:link, a#id-nine:visited {
+background-image: none;
+background-color: #46413B;
+}
+
+
+a#id-one:hover, a#id-one:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/logos.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-two:hover, a#id-two:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/identity.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-three:hover, a#id-three:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/marketing.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-four:hover, a#id-four:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/posters.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-five:hover, a#id-five:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/editorial.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-six:hover, a#id-six:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/invite.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-seven:hover, a#id-seven:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/web.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-eight:hover, a#id-eight:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/stop.png');
+background-color: transparent;
+color:transparent;
+}
+
+a#id-nine:hover, a#id-nine:active {
+background-image: url('http://www.ardesignshop.com/wp-content/uploads/2014/07/stop.png');
+background-color: transparent;
+color:transparent;
+}
+
+.carousel-caption .lead {
+font-family: 'arvoregular';
+font-size: 32px;
+}
+
+.carousel-caption h1 {
+text-transform: none;
+font-size: 22px;
+}
+
+.form-allowed-tags {
+display:none;
+}
+
+ @font-face {
+    font-family: 'roboto_slabbold';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slablight';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto_slabregular';
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/robotoslab-regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'encode_sans_narrowmedium';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-500-medium-webfont.svg#encode_sans_narrowmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'encode_sans_narrowsemibold';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-600-semibold-webfont.svg#encode_sans_narrowsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'encode_sans_narrowbold';
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.eot');
+    src: url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.woff') format('woff'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.ttf') format('truetype'),
+         url('/wp-content/themes/customizr/fonts/encodesansnarrow-700-bold-webfont.svg#encode_sans_narrowbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'arvobold';
+    src: url('fonts/arvo/arvo-bold-webfont.eot');
+    src: url('fonts/arvo/arvo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('fonts/arvo/arvo-bold-webfont.svg#arvobold') format('svg'),
+         url('fonts/arvo/arvo-bold-webfont.woff') format('woff'),
+         url('fonts/arvo/arvo-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arvoregular';
+    src: url('fonts/arvo/arvo-regular-webfont.eot');
+    src: url('fonts/arvo/arvo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/arvo/arvo-regular-webfont.svg#arvoregular') format('svg'),
+         url('fonts/arvo/arvo-regular-webfont.woff') format('woff'),
+         url('fonts/arvo/arvo-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antoniobold';
+    src: url('fonts/antonio/antonio-bold-webfont.eot');
+    src: url('fonts/antonio/antonio-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/antonio/antonio-bold-webfont.woff') format('woff'),
+         url('fonts/antonio/antonio-bold-webfont.ttf') format('truetype'),
+         url('fonts/antonio/antonio-bold-webfont.svg#antoniobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'antonioregular';
+    src: url('fonts/antonio/antonio-regular-webfont.eot');
+    src: url('fonts/antonio/antonio-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/antonio/antonio-regular-webfont.woff') format('woff'),
+         url('fonts/antonio/antonio-regular-webfont.ttf') format('truetype'),
+         url('fonts/antonio/antonio-regular-webfont.svg#antonioregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cabinregular';
+    src: url('fonts/cabin/cabin-regular-webfont.eot');
+    src: url('fonts/cabin/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-regular-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-regular-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-regular-webfont.svg#cabinregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinsemibold';
+    src: url('fonts/cabin/cabin-semibold-webfont.eot');
+    src: url('fonts/cabin/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-semibold-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-semibold-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'cabinmedium';
+    src: url('fonts/cabin/cabin-medium-webfont.eot');
+    src: url('fonts/cabin/cabin-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/cabin/cabin-medium-webfont.woff') format('woff'),
+         url('fonts/cabin/cabin-medium-webfont.ttf') format('truetype'),
+         url('fonts/cabin/cabin-medium-webfont.svg#cabinmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+div#header-content {
+max-width: 1170px;
+margin: 0 auto;
+padding: 0;
+}
+
+.site-logo img {
+    max-width: 35%;
+}
+
+.carousel-caption {
+display: block;
+margin-left: 0;
+margin: 0 auto!important;
+margin-top: 50px;
+background: none;
+max-width: 1170px!important;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: 0px; 
+}
+
+#main-wrapper {
+margin-bottom: 0;
+}
+
+.row.column-content-wrapper {
+max-width: 1170px;
+margin: 0 auto;
+}
+
+h1.home {
+  float: left;
+  width: 33%;
+  height: auto;
+  padding: 0 25px 0 0;
+}
+
+div#quote-wrapper, div#proposal-wrapper {
+  padding: 25px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-top: 25px;
+  background-color: rgba(240,240,240,.75);
+}
+
+div#quote-wrapper h2, div#proposal-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+footer#footer {
+  color: #fafafa!important;
+  border-top: none;
+  background: #5a5a5a;
+  padding: 0;
+  margin-top: 25px;
+}
+
+hr {
+border-top: none;
+}
+
+div#content {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+  width: 95%;
+  float: none;
+}
+
+.brand.span3 {
+padding-left: 15px;
+}
+
+.carousel-caption h1 {
+padding-left: 15px;
+}
+
+.btn-primary {
+  background-color: #8795A0;
+  background-image: -moz-linear-gradient(top,#8795A0,#8795A0);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#8795A0),to(#8795A0));
+  background-image: -webkit-linear-gradient(top,#8795A0,#8795A0);
+  background-image: -o-linear-gradient(top,##8795A0,#8795A0);
+  background-image: linear-gradient(to bottom,#8795A0,#8795A0);
+  background-repeat: repeat-x;
+  border-color: #e16309 #e16309 #984306;
+  border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+
+.btn-primary:hover {
+background-color: #8795A0
+}
+
+.span4 {
+  width: 33%;
+  margin-left: 0;
+}
+
+@media (max-width: 1280px) {
+#page-2 .entry-content h1 {
+font-size: 25px;
+	}
+
+
+}
+
+@media (max-width: 1024px) {
+  a.home-gallery {
+    width: 275px;
+  }
+  
+  .navbar .navbar-inner {
+    background-color: transparent!important;
+  }
+  
+  #gallery-2 .gallery-item,  #gallery-1 .gallery-item {
+    display: block;
+    margin-right: 10px;
+    width: 15%!important;
+  } 
+}
+
+@media (max-width: 800px) {
+a.site-logo img {
+    float: none!important;
+  }
+  
+  body {
+    padding-top: 0px!important;
+}
+
+.carousel-caption .lead {
+    font-size: 23px!important;
+}
+  
+  #quoterotator {
+    width: 85%;
+}
+  
+  .carousel-inner {
+    height: 250px!important;
+}
+
+#page-2 .entry-content h1 {
+font-size: 16px;
+}
+  
+
+a.home-gallery {
+    width: 43%!important;
+}
+
+h1.home {
+    float: none;
+    width: 100%;
+}
+
+.carousel-caption h1 {
+    font-size: 35px !important;
+    width: 100%!important;
+    margin-top: 70px!important;
+}
+
+.site-logo img {
+    max-width: 55%;
+}
+
+}
+
+@media (max-width: 480px) {
+#customizr-slider, #quotearea {
+
+}
+
+#page-2 .entry-content h1 {
+    font-size: 20px;
+}
+
+div#quotearea {
+    min-height: 125px;
+}
+ 
+}
+
+@media (max-width: 360px) {
+#page-2 .entry-content h1 {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+div#quotearea {
+    min-height: 145px;
+}
+
+a#id-one:link, a#id-one:visited, a#id-two:link, a#id-two:visited, a#id-three:link, a#id-three:visited, a#id-four:link, a#id-four:visited, a#id-five:link, a#id-five:visited, a#id-six:link, a#id-six:visited, a#id-seven:link, a#id-seven:visited, a#id-eight:link, a#id-eight:visited, a#id-nine:link, a#id-nine:visited {
+width: 100%!important;
+background-color: #46413B;
+}
+
+.navbar .navbar-inner {
+    background-color: transparent!important;
+  }
+
+}
